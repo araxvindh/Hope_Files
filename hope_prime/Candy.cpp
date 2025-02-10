@@ -17,7 +17,7 @@ int main() {
 
     while(ind<n)
     {
-        if(candy[i]==candy[i-1])
+        if(candy[ind]==candy[ind-1])
         {
             sum++;
             ind++;
@@ -25,14 +25,14 @@ int main() {
         }
 
         int peak=1;
-        while(candy[i]>candy[i-1] && i<n)
+        while(candy[ind]>candy[ind-1] && ind<n)
         {
             peak++;
             ind++;
             sum+=peak;
         }
         int down=1;
-        while(candy[i]<candy[i-1] && i<n)
+        while(candy[ind]<candy[ind-1] && ind<n)
         {
             ind++;
             sum+=down;
