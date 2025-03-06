@@ -1,8 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    sring a ,b;
+    string a ,b;
     cin>>a >>b;
     int n=a.size();
     int m=b.size();
