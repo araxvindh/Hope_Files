@@ -39,7 +39,7 @@ bool solve(vector<vector<int>>&mat,vector<int>&rflag,vector<int>&cflag,vector<in
     {
         int subMix=(toFill.row/3)*3+toFill.col/3;
 
-        if(rflag[toFill.row] &(1<<dig)==0 && cfalg[toFill.col]&(1<<dig)==0 && sflag[subMix]&(1<<dig)==0)
+        if(rflag[toFill.row] &(1<<dig)==0 && cflag[toFill.col]&(1<<dig)==0 && sflag[subMix]&(1<<dig)==0)
         {
             mat[toFill.row][toFill.col]=dig;
             rflag[toFill.row]=(1<<dig);
