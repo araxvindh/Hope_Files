@@ -14,25 +14,21 @@ int main()
     stack<int> st;
     vector<int> result(n);
 
-    // Start from the last element
     for (int i = n - 1; i >= 0; i--) {
-        // Pop elements from stack while the top is less than or equal to arr[i]
         while (!st.empty() && st.top() <= arr[i]) {
             st.pop();
         }
 
-        // If stack is empty, no greater element to the right; otherwise, the top is the next greater
         if (st.empty()) {
-            result[i] = -1; // or use a sentinel value like -1
+            result[i] = -1; 
         } else {
             result[i] = st.top();
         }
 
-        // Push the current element onto the stack
+
         st.push(arr[i]);
     }
 
-    // Print the result
     for (int i = 0; i < n; i++) {
         cout << result[i] << " ";
     }

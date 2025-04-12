@@ -26,7 +26,7 @@ input : 3
 OutPut: 5
 
 explaination :
-C C C
+C C C 
 C C I
 C I C
 I C I

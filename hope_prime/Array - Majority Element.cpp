@@ -43,7 +43,7 @@ int main()
             if(arr[i]==majElm)
             {
                 cnt++;
-            }
+            } 
         }
     }
 
